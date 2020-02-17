@@ -1,0 +1,149 @@
+.content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0 20rpx;
+
+		.shopchar {
+			width: 100%;
+		}
+
+		.footall {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			background-color: #eee;
+			width: 100%;
+			height: 90rpx;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+
+			.close {
+				background-color: #DD524D;
+				color: #fff;
+				height: 100%;
+				width: 160rpx;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.footAll-price {
+				margin-right: 20rpx;
+
+				.all-price {
+					color: #DD524D;
+				}
+			}
+		}
+
+		table {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			font-size: 30rpx;
+
+			tbody {
+				tr {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					margin: 10rpx 0;
+
+					image {
+						width: 160rpx;
+						height: 140rpx;
+					}
+
+					.buttons {
+						width: 80rpx;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+
+						/deep/uni-button[size=mini] {
+							padding: 3rpx 20rpx;
+
+							.sub {
+								/deep/uni-button[size=mini] {
+									padding: 3rpx 25rpx;
+								}
+							}
+						}
+
+						.good-price {
+							text-align: center;
+						}
+
+						.btnbox {
+							box-sizing: border-box;
+							width: 60rpx;
+							display: flex;
+							justify-content: center;
+						}
+					}
+
+					.delbox-out {
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						width: 120rpx;
+
+						.delbox {
+							/deep/uni-button[size=mini] {
+								padding: 10rpx 20rpx;
+							}
+						}
+
+					}
+
+					.goodsinof {
+						flex: 1;
+						padding-left: 10rpx;
+						display: flex;
+						flex-direction: column;
+
+						.good-title {
+							font-size: 30rpx;
+							color: #333333;
+						}
+
+						.goods-price {
+							font-size: 27rpx;
+
+							.goods-price-in {
+								font-size: 36rpx;
+								color: #DD524D;
+								font-weight: bold;
+							}
+						}
+
+						.goods-old {
+							font-size: 26rpx;
+							color: #808080;
+
+							.del-old {
+								text-decoration: line-through;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.shopchar-title {
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+
+			.allchecked {
+				display: flex;
+				justify-content: space-between;
+
+				.allchecked-in {}
+			}
+
+		}
+	}
